@@ -4,6 +4,7 @@ var git = require("gulp-git");
 var bump = require("gulp-bump");
 var prompt = require("gulp-prompt");
 var tagVersion = require("gulp-tag-version");
+var shell = require("gulp-shell");
 
 var pkgSource = ["./package.json"];
 
@@ -22,7 +23,10 @@ module.exports = function(gulp, depends) {
       // tag it in the repository
       .pipe(tagVersion())
       // push it
-      .pipe(git.push("origin", "master", {args: "--tags"}));
+      // can't use git.push until this is resolved...
+      // https://github.com/ikari-pl/gulp-tag-version/issues/8
+      //.pipe(git.push("origin", "master", {args: "--tags"}));
+      .pipe(shell("git push origin master --tags"));
   }
 
   gulp.task("release", depends, function(done) {
