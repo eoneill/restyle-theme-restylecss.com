@@ -1,14 +1,14 @@
 @include restyle-define(anchor, (
   text-decoration: none,
   cursor: pointer,
-  color: palette(brand),
+  color: palette(blue),
 
   '@restyle.states': (
     visited: (
       color: palette(accent, purple)
     ),
     hover: (
-      color: palette(accent, blue)
+      color: palette(accent, teal)
     )
   ),
 
