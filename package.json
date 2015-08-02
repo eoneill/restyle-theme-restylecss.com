@@ -1,7 +1,7 @@
 {
   "name": "restyle-theme-restylecss.com",
   "description": "The reSTYLE theme for restylecss.com",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": {
     "name": "Eugene ONeill",
     "email": "",
@@ -45,7 +45,9 @@
     "gulp-git": "^1.2.4",
     "gulp-mocha": "^2.1.3",
     "gulp-prompt": "^0.1.2",
+    "gulp-shell": "^0.4.2",
     "gulp-tag-version": "^1.3.0",
+    "gulp-wait": "0.0.2",
     "mocha": "^2.2.5",
     "should": ">= 7.0.2"
   }
