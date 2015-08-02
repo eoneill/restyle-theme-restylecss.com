@@ -19,7 +19,9 @@
   },
   "keywords": [
     "sass",
-    "eyeglass-module"
+    "eyeglass-module",
+    "restyle",
+    "restyle-theme"
   ],
   "eyeglass": {
     "name": "restylecss.com"
