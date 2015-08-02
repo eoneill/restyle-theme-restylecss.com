@@ -1,0 +1,5 @@
+@import "restylecss.com";
+
+.copy {
+  @include restyle(copy);
+}
