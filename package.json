@@ -1,0 +1,32 @@
+{
+  "name": "restyle-theme-restylecss.com",
+  "description": "The reSTYLE theme for restylecss.com",
+  "version": "0.0.1",
+  "author": {
+    "name": "Eugene ONeill",
+    "email": "",
+    "url": "https://github.com/eoneill"
+  },
+  "license": "Apache-2.0",
+  "main": "eyeglass-exports.js",
+  "README": "README.md",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eoneill/restyle-theme-restylecss.com.git"
+  },
+  "keywords": [
+    "sass",
+    "eyeglass-module"
+  ],
+  "eyeglass": {
+    "name": "restylecss.com"
+  },
+  "dependencies": {
+    "eyeglass": ">=0.5.0",
+    "eyeglass-restyle": ">=0.1.6",
+    "node-sass": ">=3.2.0"
+  }
+}
