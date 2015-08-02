@@ -1,6 +1,6 @@
 # restyle-theme-restylecss.com
 
-This is the reSTYLE theme for [restylecss.com][http://restylecss.com].
+This is the reSTYLE theme for [restylecss.com](http://restylecss.com).
 
 ## Installation
 
