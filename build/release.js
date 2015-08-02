@@ -20,7 +20,9 @@ module.exports = function(gulp, depends) {
       // commit the changed version number
       .pipe(git.commit("bump version"))
       // tag it in the repository
-      .pipe(tagVersion());
+      .pipe(tagVersion())
+      // push it
+      .pipe(git.push("origin", "master", {args: "--tags"}))
   }
 
   gulp.task("release", depends, function(done) {

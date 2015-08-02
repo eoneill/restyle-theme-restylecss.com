@@ -17,6 +17,10 @@
     "type": "git",
     "url": "https://github.com/eoneill/restyle-theme-restylecss.com.git"
   },
+  "bugs": {
+    "url": "https://github.com/eoneill/restyle-theme-restylecss.com/issues"
+  },
+  "homepage": "https://github.com/eoneill/restyle-theme-restylecss.com",
   "keywords": [
     "sass",
     "eyeglass-module",
