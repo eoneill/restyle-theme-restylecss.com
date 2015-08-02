@@ -22,7 +22,7 @@ module.exports = function(gulp, depends) {
       // tag it in the repository
       .pipe(tagVersion())
       // push it
-      .pipe(git.push("origin", "master", {args: "--tags"}))
+      .pipe(git.push("origin", "master", {args: "--tags"}));
   }
 
   gulp.task("release", depends, function(done) {
