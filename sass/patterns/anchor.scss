@@ -1,7 +1,7 @@
 @include restyle-define(anchor, (
   text-decoration: none,
   cursor: pointer,
-  color: palette(blue),
+  color: palette(accent, blue),
 
   '@restyle.states': (
     visited: (
