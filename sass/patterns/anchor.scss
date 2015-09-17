@@ -3,7 +3,7 @@
   cursor: pointer,
   color: palette(accent, blue),
 
-  '@restyle.states': (
+  restyle-states: (
     visited: (
       color: palette(accent, purple)
     ),
@@ -12,10 +12,10 @@
     )
   ),
 
-  '@restyle.modifiers': (
+  restyle-modifiers: (
     in footer: (
       color: palette(gray, light),
-      '@restyle.states': (
+      restyle-states: (
         visited: (
           color: inherit
         ),
@@ -26,15 +26,15 @@
     ),
 
     in nav: (
-      '@restyle': extra-small headline,
+      restyle: extra-small headline,
       color: palette(gray, lighter),
       line-height: 1,
-      '@restyle.states': (
+      restyle-states: (
         hover: (
           color: palette(gray, lightest)
         ),
         visited: (
-          color: '@root.color'
+          color: root(color)
         )
       )
     )

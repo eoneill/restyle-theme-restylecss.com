@@ -1,5 +1,5 @@
 @include restyle-define(button, (
-  '@restyle.var border-color': darken(palette(brand), 5%),
+  restyle-var border-color: darken(palette(brand), 5%),
 
   display: inline-block,
   padding: 5px 10px,
@@ -9,13 +9,13 @@
   text-transform: uppercase,
   appearance: none,
   vertical-align: middle,
-  border: 1px solid '@var.border-color',
+  border: 1px solid restyle-var(border-color),
   border-radius: 4px,
   background-color: palette(brand),
   color: palette(gray, lightest),
   cursor: pointer,
 
-  '@restyle.states': (
+  restyle-states: (
     hover: (
       background-color: lighten(palette(brand), 5%),
       border-color: palette(brand),
@@ -23,22 +23,22 @@
     ),
 
     disabled: (
-      border-color: '@var.border-color',
+      border-color: restyle-var(border-color),
       // note that we can reference other values within the definition
-      background-color: '@root.background-color',
-      color: '@root.color',
+      background-color: root(background-color),
+      color: root(color),
       opacity: 0.8,
       cursor: default
     )
   ),
 
-  '@restyle.modifiers': (
+  restyle-modifiers: (
     secondary: (
-      '@restyle.var border-color': rgba(0, 0, 0, 0.1),
+      restyle-var border-color: rgba(0, 0, 0, 0.1),
       background-color: palette(gray, lighter),
       color: palette(gray, medium),
 
-      '@restyle.states': (
+      restyle-states: (
         hover: (
         // TODO
           background-color: #e0e0e0,
@@ -49,11 +49,11 @@
     ),
 
     call-to-action: (
-      '@restyle.var border-color': darken(palette(accent, purple), 5%),
+      restyle-var border-color: darken(palette(accent, purple), 5%),
       background-color: palette(accent, purple),
       color: palette(gray, lightest),
 
-      '@restyle.states': (
+      restyle-states: (
         hover: (
           background-color: lighten(palette(accent, purple), 5%),
           border-color: palette(accent, purple),
@@ -63,12 +63,12 @@
     ),
 
     in a landing: (
-      '@restyle.var border-color': palette(gray, medium),
+      restyle-var border-color: palette(gray, medium),
       background-color: palette(accent, yellow),
       color: palette(gray, medium-dark),
       box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4),
 
-      '@restyle.states': (
+      restyle-states: (
         hover: (
           background-color: lighten(palette(accent, yellow), 5%),
           border-color: palette(gray, medium),

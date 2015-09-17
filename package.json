@@ -28,26 +28,27 @@
     "restyle-theme"
   ],
   "eyeglass": {
-    "name": "restylecss.com"
+    "name": "restylecss.com",
+    "needs": "^0.6.2"
   },
   "dependencies": {
-    "eyeglass": ">=0.5.0",
-    "eyeglass-restyle": ">=0.1.6",
+    "eyeglass": "^0.6.2",
+    "eyeglass-restyle": "^0.2.4",
     "node-sass": ">=3.2.0"
   },
   "devDependencies": {
-    "eslint": "^1.0.0",
-    "eyeglass-dev-eslint": "1.0.1",
-    "eyeglass-dev-testutils": "^0.0.2",
+    "eslint": "^1.4.3",
+    "eyeglass-dev-eslint": "2.0.0",
+    "eyeglass-dev-testutils": "^0.0.3",
     "gulp": "^3.9.0",
     "gulp-bump": "^0.3.1",
     "gulp-eslint": "^1.0.0",
-    "gulp-git": "^1.2.4",
+    "gulp-git": "^1.4.0",
     "gulp-mocha": "^2.1.3",
     "gulp-prompt": "^0.1.2",
-    "gulp-shell": "^0.4.2",
+    "gulp-shell": "^0.4.3",
     "gulp-tag-version": "^1.3.0",
-    "mocha": "^2.2.5",
-    "should": ">= 7.0.2"
+    "mocha": "^2.3.2",
+    "should": "^7.1.0"
   }
 }

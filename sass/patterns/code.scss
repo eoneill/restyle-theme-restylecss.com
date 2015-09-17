@@ -5,7 +5,7 @@
   border-radius: 4px,
   padding: 3px,
 
-  '@restyle.modifiers': (
+  restyle-modifiers: (
     block: (
       background-color: palette(gray, dark),
       color: palette(gray, medium-light),

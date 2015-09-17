@@ -1,5 +1,5 @@
 @include restyle-define(menu-item, (
-  '@restyle.modifiers': (
+  restyle-modifiers: (
     in a sidebar: (
       line-height: 2.4,
       color: palette(gray, light),
@@ -22,7 +22,7 @@
         transition: ease-in-out 0.2s
       ),
 
-      '@restyle.states': (
+      restyle-states: (
         hover: (
           color: palette(gray, lightest)
         ),

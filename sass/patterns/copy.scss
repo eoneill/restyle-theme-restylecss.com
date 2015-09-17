@@ -4,7 +4,7 @@
   line-height: 1.5,
   font-family: font-family(sans-serif),
 
-  '@restyle.modifiers': (
+  restyle-modifiers: (
     in footer: (
       color: palette(gray, lightest),
       font-size: 16px
