@@ -1,5 +1,5 @@
 @include restyle-define(button, (
-  restyle-var border-color: darken(palette(brand), 5%),
+  restyle-var(border-color): darken(palette(brand), 5%),
 
   display: inline-block,
   padding: 5px 10px,
@@ -34,7 +34,7 @@
 
   restyle-modifiers: (
     secondary: (
-      restyle-var border-color: rgba(0, 0, 0, 0.1),
+      restyle-var(border-color): rgba(0, 0, 0, 0.1),
       background-color: palette(gray, lighter),
       color: palette(gray, medium),
 
@@ -49,7 +49,7 @@
     ),
 
     call-to-action: (
-      restyle-var border-color: darken(palette(accent, purple), 5%),
+      restyle-var(border-color): darken(palette(accent, purple), 5%),
       background-color: palette(accent, purple),
       color: palette(gray, lightest),
 
@@ -63,7 +63,7 @@
     ),
 
     in a landing: (
-      restyle-var border-color: palette(gray, medium),
+      restyle-var(border-color): palette(gray, medium),
       background-color: palette(accent, yellow),
       color: palette(gray, medium-dark),
       box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4),
